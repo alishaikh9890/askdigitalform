@@ -1,0 +1,611 @@
+.Form {
+
+  /* border: 5px solid rgb(214, 184, 136); */
+
+  border:5px solid rgb(43, 41, 42);
+  margin: auto;
+  }
+
+  .header {
+    width:100%;
+  }
+
+  .header > img{
+    width:100%;
+  }
+
+  .first, .second, .third, .fourth{
+    /* padding: 5vh 15vh; */
+    padding:2.5% 8%;
+  }
+
+  @media screen and (max-width: 1600px) {
+      .first, .second, .third, .fourth{
+        padding:2.5% 4%;
+  }
+  }
+
+  
+  /* ///////////// FIRST PART OF FORM ////////////////// */
+  
+  .first{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .first input{
+    padding: 1vh;
+    min-width: 70%;
+    width: 380px;
+    font-size: 15px;
+    margin:0px;
+  }
+
+
+  .first > div{
+   
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first > div label{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+
+
+  
+
+
+  /* ///////////// SECOND PART OF FORM ////////////////// */
+
+.second > div > div{
+  display: flex;
+  flex-flow: wrap;
+  gap: 30px;
+}
+
+/* The container */
+.container {
+
+  display: flex;
+
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid gainsboro;
+  background-color: #eee;
+ 
+}
+
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: green;
+ 
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 1px;
+  width: 6px;
+  height: 15px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+  /* ///////////// THIRT PART OF FORM ////////////////// */
+  
+  
+  #third-pay-method{
+  display: flex;
+  gap: 20px;
+  justify-content: start;
+  }
+  
+  #third-pay-method label{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  
+  .third{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+
+
+  .check-details{
+    margin-top: 30px;
+      }
+
+  .check-details{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .check-details > div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .check-details > div label{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.check-details  input{
+  padding: 1vh;
+  min-width: 70%;
+  width: 380px;
+  font-size: 15px;
+  margin:0px;
+}
+  
+.pay-button{
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 10px;
+}
+
+.pay-button Button{
+  font-weight: 600;
+  width: 100%;
+}
+
+  
+.upi{
+  padding:2vh;
+display: flex;
+margin: auto;
+justify-content: space-between;
+align-items: center;
+
+  width: 70%;
+}
+.upi img{
+  padding: 1.5vh;
+  width: 200px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+ 
+  border-radius: 10px;
+
+}
+
+.upi img:first-child{
+  width: 350px;
+}
+
+
+.cash {
+padding:2vh;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cash img{
+  width: 250px;
+
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+.neft{
+  display: flex;
+  justify-content: center;
+
+}
+.neft img{
+  width: 50%;
+  height: 250px;
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+.dd{
+  display: flex;
+  justify-content: center;
+
+}
+.dd img{
+  width: 50%;
+  height: 250px;
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+
+  
+
+@media screen and (max-width:950px) {
+  .upi{
+    width: 90%;
+;}
+
+    .upi img:first-child{
+      width: 40%;
+    }
+
+    .upi img:last-child{
+      width: 30%;
+}
+}
+
+@media screen and (max-width:500px) {
+  .upi{
+    padding: 0px;
+    width: 100%;
+    display: flex;
+
+  }
+  .upi img:first-child{
+    width: 200px;
+  }
+
+  .upi img:last-child{
+    padding: 5px;
+    width: 120px;
+}
+
+.neft img{
+  width: 90%;
+  height: 20  0px;
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+.dd img{
+  width: 90%;
+  height: 20  0px;
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+}
+
+@media screen and (max-width:400px) {
+
+  .upi{
+    display: flex;
+    flex-direction: column;
+  }
+  .upi img:last-child{
+    padding: 5px;
+    width: 180px;
+}
+}
+
+  
+
+
+
+
+  
+  
+  /* ///////////// FOURTH PART OF FORM ////////////////// */
+  
+  .terms{
+    display: flex;
+    flex-flow: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+  .terms input{
+    width: 220px;
+    padding: 5px;
+  
+     font-size: 15px;
+     border: none;
+     border-bottom: 1px solid black;
+  }
+  
+  .client-sign{
+   border: 1px solid gainsboro;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .client-sign p{
+    font-size: 14px;
+    text-align: center;
+  
+  }
+  .client-sign input{
+  
+    align-self: center;
+  }
+  
+  .sign{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  .emp-sign p{
+  line-height: 2px;
+  }
+
+  .prev-button{
+    display: flex;
+    justify-content: center;
+    padding: 1vh;
+    margin-bottom: 4vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  }
+
+  .prev-button > Button{
+    font-weight: 600;
+  }
+
+
+
+/* ///////////// FOOTER PART OF FORM ////////////////// */
+
+.footer{
+  background-color: rgb(43, 41, 42);
+  padding: 2vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer img{
+  max-width: 100%;
+  width: 40px;
+  border-radius: 50%;
+}
+
+
+
+
+/* ///////////// MEDIA QUIRY PARTS////////////////// */
+
+
+
+  @media screen and (max-width: 1350px) {
+    .first > div label{
+      width: 48%;
+    }
+
+      .check-details > div label{
+        width: 48%;
+      }
+      .first, .second, .third, .fourth{
+        padding:2% 3%;
+  }
+  }
+
+
+  @media screen and (max-width: 1230px) and (min-width:780px) {
+    .first, .second, .third, .fourth{
+      padding:2% 3%;
+  }
+    .first input{  
+      min-width: 90%;
+      width: 320px;
+    }
+
+    .check-details input{
+      min-width: 90%;
+    width: 320px;
+    }
+
+    .first > div label{
+   
+      display: flex;
+      gap: 3px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      text-align: start;
+    }
+
+    .check-details > div label{
+
+      display: flex;
+      gap: 3px;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      text-align: start;
+    }
+  }
+
+  
+  @media screen and (max-width: 780px) {
+
+   .check-details > div{
+      display: flex;
+      gap: 40px;
+
+      flex-direction: column;
+    }
+
+    .first > div{
+      display: flex;
+      gap: 40px;
+
+      flex-direction: column;
+    }
+
+    .first > div label{
+      width: 100%;
+
+    }
+
+    .check-details > div label{
+      width: 100%;
+
+    }
+
+    .first > div label input{
+      min-width: 70%;
+      width: 200px;
+    }
+
+    .first > div label input{
+      min-width: 70%;
+      width: 200px;
+    }
+
+    .Form{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    
+
+    .first{
+
+      gap: 25px;
+
+    }
+
+    .check-details{
+
+      gap: 25px;
+    }
+    .check-details > div{
+
+      gap: 25px;
+    }
+
+    .first > div{
+
+      gap: 25px;
+    }
+
+    .first > div label{
+
+      flex-direction: column;
+      align-items: start;
+      gap: 3px;
+    }
+
+    .check-details > div label{
+
+      flex-direction: column;
+      align-items: start;
+      gap: 3px;
+    }
+
+    .first > div label input{
+      width: 95%;
+    }
+
+    .check-details > div label input{
+      width: 95%;
+    }
+
+      .first, .second, .third, .fourth{
+        padding:2% 6%;
+  }
+
+
+  .pay-button{
+    width: 100%;
+  }
+  }
+
+
+  @media screen and (max-width:390px) {
+    .pay-button{
+      width:100%;
+      position: relative;
+      right:4%;
+    }
+  }
+
+  @media screen and
+   (max-width:350px) {
+    .pay-button{
+      width: 100%;
+      gap:0px;
+      display: flex;
+      
+    position: relative;
+    left:-20px;
+ 
+    }
+
+    .ment{
+      font-weight: 500;
+font-weight: 400;
+    
+    }
+  }
+
+@media screen and (max-width:320px) {
+.pay-button{
+ flex-flow: wrap;
+ margin: auto;
+
+}
+  }
+
