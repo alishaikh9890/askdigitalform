@@ -14,13 +14,13 @@
     width:100%;
   }
 
-  .first, .second, .third, .fourth{
+  .first, .second, .third, .fourth, .total{
     /* padding: 5vh 15vh; */
     padding:2.5% 8%;
   }
 
   @media screen and (max-width: 1600px) {
-      .first, .second, .third, .fourth{
+      .first, .second, .third, .fourth, .total{
         padding:2.5% 4%;
   }
   }
@@ -63,6 +63,10 @@
 
   /* ///////////// SECOND PART OF FORM ////////////////// */
 
+  .second{
+    margin-right: 100px;
+
+  }
 .second > div > div{
   display: flex;
   flex-flow: wrap;
@@ -170,7 +174,7 @@
 
 
 
-  .check-details{
+  /* .check-details{
     margin-top: 30px;
       }
 
@@ -178,27 +182,27 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-  }
+  } */
 
-  .check-details > div{
+  /* .check-details > div{
     display: flex;
     justify-content: space-between;
-  }
+  } */
 
-  .check-details > div label{
+  /* .check-details > div label{
     width: 45%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
-.check-details  input{
+/* .check-details  input{
   padding: 1vh;
   min-width: 70%;
   width: 380px;
   font-size: 15px;
   margin:0px;
-}
+} */
   
 .pay-button{
   display: flex;
@@ -247,6 +251,19 @@ padding:2vh;
 .cash img{
   width: 250px;
 
+  padding: 2vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 10px;
+}
+
+.check-details{
+  display: flex;
+  justify-content: center;
+
+}
+.check-details img{
+  width: 50%;
+  height: 250px;
   padding: 2vh;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   border-radius: 10px;
@@ -442,7 +459,7 @@ padding:2vh;
 
 
   @media screen and (max-width: 1230px) and (min-width:780px) {
-    .first, .second, .third, .fourth{
+    .first, .second, .third, .fourth, .total{
       padding:2% 3%;
   }
     .first input{  
@@ -563,7 +580,7 @@ padding:2vh;
       width: 95%;
     }
 
-      .first, .second, .third, .fourth{
+      .first, .second, .third, .fourth, .total{
         padding:2% 6%;
   }
 
@@ -605,7 +622,77 @@ font-weight: 400;
 .pay-button{
  flex-flow: wrap;
  margin: auto;
+ 
 
 }
   }
 
+
+
+  /* ////////////// COST CALCULATION CSS ////////////// */
+
+  .costInput::-webkit-outer-spin-button,
+  .costInput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .costInput{
+    width:60px;
+    padding:0px 1vh;
+    margin-left: -20px;
+  }
+
+  .webTotal{
+    text-align: start;
+    width:70px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 8px 10px 8px 10px;
+    position: absolute;
+    right: 5%;
+    border-radius: 5px;
+  }
+  .allTotal{
+    text-align: start;
+    font-size: 17px;
+    width:200px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+  }
+
+
+  .advanceTotal{
+    display: flex;
+    align-items: center;
+    text-align: start;
+    margin: auto 0;
+    font-size: 17px;
+    width:200px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+ padding:1px;
+    border-radius: 5px;
+  }
+
+  .advanceTotal > input{
+    padding: 7px 0px 7px 8px;
+    font-size: 17px;
+    border: none;
+    width: 170px;
+  }
+  /* .advanceTotal > input:focus{
+    border:
+  } */
+
+  .advanceTotal > input::-webkit-outer-spin-button,
+  .advanceTotal > input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .ruppeeIcon{
+    position: absolute;
+    right: 5px;
+  }

@@ -15,7 +15,7 @@ function App() {
   const [companyAddressError, setCompanyAddressError] = React.useState(false)
   const [companyMobileError, setCompanyMobileError] = React.useState(false)
   const [companyEmailError, setCompanyEmailError] = React.useState(false)
-  const [companyGstError, setCompanyGstError] = React.useState(false)
+  // const [companyGstError, setCompanyGstError] = React.useState(false)
   const [companyClientError, setCompanyClientError] = React.useState(false)
 
   const [data, setData] = React.useState({})
@@ -54,13 +54,13 @@ function App() {
     setCompanyEmailError(false)
   }
   
-  if(formData.gst.trim() == "") {
+  // if(formData.gst.trim() == "") {
    
-    setCompanyGstError(true)
-  }
-  else {
-    setCompanyGstError(false)
-  }
+  //   setCompanyGstError(true)
+  // }
+  // else {
+  //   setCompanyGstError(false)
+  // }
 
    if(formData.client_name.trim() == "") {
    
@@ -77,8 +77,8 @@ function App() {
    formData.mobile.trim() !== ""
    && 
    formData.email.trim() !== ""
-   &&
-   formData.gst.trim() !== ""
+  //  &&
+  //  formData.gst.trim() !== ""
    &&
    formData.client_name.trim() !== ""
    ) 
@@ -98,7 +98,7 @@ function App() {
                 companyNameError={companyNameError}
                 companyAddressError={companyAddressError}
                 companyMobileError={companyMobileError}
-                companyGstError={companyGstError}
+                // companyGstError={companyGstError}
                 companyEmailError={companyEmailError}
                 companyClientError={companyClientError}
                  />
